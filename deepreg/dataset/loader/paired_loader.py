@@ -1,5 +1,5 @@
 """
-Loads paired image data
+Load paired image data.
 supports h5 and Nifti formats
 supports labeled and unlabeled data
 """
@@ -15,10 +15,9 @@ from deepreg.dataset.util import check_difference_between_two_lists
 
 class PairedDataLoader(AbstractPairedDataLoader, GeneratorDataLoader):
     """
-    Loads paired data using given file loader
-    Handles both labeled and unlabeled cases
-    The function sample_index_generator needs to be defined for the
-    GeneratorDataLoader class
+    Load paired data using given file loader.
+    |  Handles both labeled and unlabeled cases.
+    The function sample_index_generator needs to be defined for the GeneratorDataLoader class.
     """
 
     def __init__(
